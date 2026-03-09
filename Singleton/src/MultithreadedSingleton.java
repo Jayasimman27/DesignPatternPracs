@@ -3,7 +3,7 @@ public class MultithreadedSingleton {
     private MultithreadedSingleton(){};
 
     public static MultithreadedSingleton getInstance(){
-        if(ins == null){
+        if (ins == null){
           synchronized (MultithreadedSingleton.class){
               if(ins == null){
                  ins = new MultithreadedSingleton();
